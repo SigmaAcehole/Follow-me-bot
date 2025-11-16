@@ -1,0 +1,11 @@
+## Requirements for Follow-me-bot
+# Note: Install a CUDA-enabled `torch` build if you have a GPU. See https://pytorch.org/
+
+numpy>=1.21
+matplotlib
+opencv-python
+pillow
+jupyterlab
+timm
+torch>=1.13.0
+torchvision>=0.14.0
