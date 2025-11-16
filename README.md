@@ -10,42 +10,12 @@ This repository demonstrates the concept of a "Follow-me" robot that can locate 
 
 
 **Quick Start**
-- **Prerequisites**: Python 3.8+ and `git` installed.
-- Create and activate a virtual environment (PowerShell):
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-``` 
-
-- Install dependencies. If you have a `requirements.txt` add it and run:
-
-```powershell
-pip install -r requirements.txt
-```
-
-- Minimal suggested packages (install as appropriate for your system / CUDA):
-
-```powershell
-pip install numpy matplotlib opencv-python jupyterlab
-# For PyTorch follow official instructions: https://pytorch.org/
-# Example (CPU-only):
-pip install torch torchvision
-# Optional: timm (used by some MiDaS forks)
-pip install timm
-```
+- **Prerequisites**: Python 3.8+, PyTorch and jupyterlab.
 
 **Running the notebook**
-- Start Jupyter and open the notebook:
+- Start Jupyter and run the `follow_me_robot.ipynb` notebook.
 
-```powershell
-jupyter lab
-# or
-jupyter notebook
-```
-
-- Open `midas_depth_estimation.ipynb` and run cells top-to-bottom. The notebook downloads or loads a pretrained MiDaS model (when required), runs inference on example images, and produces depth visualizations.
 
 **Notes & Tips**
-- MiDaS model weights are typically downloaded automatically by the notebook or by the MiDaS helper utilities. If running offline, download the weights in advance and point the notebook to the local path.
+- MiDaS model weights are downloaded automatically by the notebook during the first run. If running offline, download the weights in advance and point the notebook to the local path.
 - For best performance on larger images use a machine with a GPU and install a CUDA-enabled build of PyTorch.
