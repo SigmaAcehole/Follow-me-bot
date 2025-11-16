@@ -1,7 +1,10 @@
 # Follow-me bot
 This repository demonstrates the concept of a "Follow-me" robot that can locate a person of interest (or the user) and keep following them from a safe distance. The person of interest is located with a bounding box and tracked even when obstructed with obstacles or other humans. The distance of the person from the camera is computed and displayed below the bounding box.
 
-![Model output visualization](demo.gif)  
+<p align="center">
+  <img src="demo.gif" alt="Model output visualization" width="600">
+</p>
+
 
 **Deep learning models utilized**
 - **[YOLOv8](https://docs.ultralytics.com/models/yolov8/)**: A single-stage object detection network that was pre-trained to detect multiple objects including humans.
@@ -14,6 +17,7 @@ This repository demonstrates the concept of a "Follow-me" robot that can locate 
 
 **Running the notebook**
 - Start Jupyter and run the `follow_me_robot.ipynb` notebook.
+- An example video is provided in `data` directory but you can use your custom video as well.
 
 
 **Notes & Tips**
